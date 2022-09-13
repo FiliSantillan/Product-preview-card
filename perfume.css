@@ -1,3 +1,4 @@
+
 body {
         background: hsl(30, 38%, 92%);
         margin: 5px;
@@ -13,8 +14,11 @@ body {
             width: 600px;
             background: white;
 }
-.image {
+.mobile {
+    display: none;
 }
+.image {
+}       
 .image img {
     border-radius:  10px 0 0 10px;
     position: absolute;
@@ -22,19 +26,21 @@ body {
     width: 300px;
 }
 .perfume {
+    color: hsl(228, 12%, 48%);
         position: absolute;
         text-align: center;
         top: 30px;
         left: 150px;
         right: 7px;
-        font-size: 14px;
+        font-size: 12px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
 }
 .nombre-del-perfume {
+    color: hsl(212, 21%, 14%);
         position: absolute;
         text-align: left;
-        top: 70px;
+        top: 60px;
         left: 330px;
         right: 7px;
         font-family: 'Fraunces', serif;
@@ -42,31 +48,35 @@ body {
         font-size: 35px;
 }
 .info {
+    color: hsl(228, 12%, 48%);
     position: absolute;
         text-align: left;
-        top: 220px;
+        top: 210px;
         left: 330px;
         right: 7px;
-        font-size: 14px;
+        font-size: 15px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
 }
 .precio {
+    color: #3E8169;
     position: absolute;
         text-align: left;
         top: 300px;
-        left: 320px;
+        left: 330px;
         right: 7px;
         font-size: 30px;
         font-family: 'Fraunces', serif;
         font-weight: 700;
 }
 .precio2 {
+    color: hsl(228, 12%, 48%);
     position: absolute;
     text-align: center;
-    top: 290px;
-    left: 450px;
+    top: 310px;
+    left: 390px;
     right: 7px;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
@@ -74,15 +84,136 @@ body {
     position: absolute;
         text-align: center;
         top: 350px;
-        left: 350px;
+        left: 330px;
         right: 7px;
         height: 35px;
-        width: 200px;
+        width: 240px;
         border-radius: 5px;
-        background: #3D8168;
+        border: none;
+        background: #3D8169;
+        color: white;
+        backface-visibility: hidden;
+}
+.boton:hover  {
+    backface-visibility: hidden;
+    background: #1A4031;
+    cursor: pointer;
 }
 .boton svg {
     align-items: center;
     position: absolute;
     left: 40px;
 }
+
+@media screen and (max-width: 375px) {
+    body {
+            background: hsl(30, 38%, 92%);
+            margin: 5px;
+            height: 150vh;
+            width: 150%;
+            display: grid;
+            place-items: center;
+        }
+    .container {
+            position: relative;
+            border-radius: 10px;
+            height: 1000px;
+            width: 500px;
+            background: white;
+        }
+    .mobile {
+        display: block;
+    }
+    .mobile img {
+            border-radius: 10px 10px 0 0;
+            position: absolute;
+            height: 400px;
+            width: 500px;
+        }
+        .perfume {
+                color: hsl(228, 12%, 48%);
+                position: absolute;
+                text-align: center;
+                    top: 430px;
+                    left: -310px;
+                    right: 7px;
+                    font-size: 18px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                }
+        
+    .nombre-del-perfume {
+                    color: hsl(212, 21%, 14%);
+                    position: absolute;
+                    text-align: left;
+                    top: 470px;
+                    left: 30px;
+                    right: 7px;
+                    font-family: 'Fraunces', serif;
+                    font-weight: 700;
+                    font-size: 50px;
+                }
+        
+    .info {
+                    color: hsl(228, 12%, 48%);
+                    position: absolute;
+                    text-align: left;
+                    top: 630px;
+                    left: 30px;
+                    right: 7px;
+                    font-size: 22px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                }
+        
+    .precio {
+                    color: #3E8169;
+                    position: absolute;
+                    text-align: left;
+                    top: 800px;
+                    left: 30px;
+                    right: 7px;
+                    font-size: 50px;
+                    font-family: 'Fraunces', serif;
+                    font-weight: 700;
+                }
+        
+    .precio2 {
+                    color: hsl(228, 12%, 48%);
+                    position: absolute;
+                    text-align: center;
+                    top: 820px;
+                    left: 100px;
+                    right: 7px;
+                    font-size: 20px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                }
+        
+    .boton {
+                    position: absolute;
+                    text-align: center;
+                    top: 910px;
+                    left: 30px;
+                    right: 7px;
+                    height: 50px;
+                    width: 450px;
+                    border-radius: 5px;
+                    border: none;
+                    background: #3D8169;
+                    color: white;
+                    backface-visibility: hidden;
+                }
+        
+                .boton:hover {
+                    backface-visibility: hidden;
+                    background: #1A4031;
+                }
+        
+                .boton svg {
+                    align-items: center;
+                    position: absolute;
+                    left: 160px;
+                }
+}
+
